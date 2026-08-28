@@ -219,9 +219,7 @@ class Controllerapismpextension extends Controller
 
 	public function update_order_status()
 	{
-
 		$this->load->language('api/update_order_status');
-
 		$json = array();
 
 		$order_id = (int)$this->request->get['order_id'];
@@ -427,7 +425,7 @@ class Controllerapismpextension extends Controller
 		$json = array();
 
 		$order_id = (int)$this->request->get['id'];
-
+	
 		$sql = "SELECT 
 		order_table.order_id, 
 		order_table.invoice_no, 
